@@ -318,32 +318,9 @@ de la variable `size` y almacénalos en las variables
 sumario se almacenará en `pack_sum`.
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pack_sum<-cran%>%
+  group_by(package)%>%
+  summarise(count=n(), unique=n_distinct(ip_id), countries=n_distinct(country), avg_bytes=mean(size, na.rm=TRUE), med_bytes=stats::median(size, na.rm=TRUE))
 ```
 
 22. Muestra el 1% de los paquetes que han sido más descargados. Para
