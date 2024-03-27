@@ -281,7 +281,7 @@ cran3%>% mutate(correct_size=size-1000)
     `avg_bytes`
 
 ```{r}
-
+avg_bytes<-cran%>%summarise(avg_bytes=mean(size))
 ```
 
 # Agrupamientos
