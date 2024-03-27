@@ -208,7 +208,7 @@ cran %>% filter(size>100500, r_os=="linux-gnu")
     no está vacía.
 
 ```{r}
-
+cran %>% filter(!is.na(r_version))
 ```
 
 10. Almacena en `cran2` todas las columnas entre `size` y `ip_id`.
