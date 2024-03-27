@@ -194,9 +194,7 @@ cran %>% filter(country=="ES", r_version>"3.4.0")
     (PT).
 
 ```{r}
-
-
-
+cran %>% filter(country %in% c("ES", "PT"))
 ```
 
 8.  Elige aquellas descargas cuyo tamaño supera los 100500 bytes desde
