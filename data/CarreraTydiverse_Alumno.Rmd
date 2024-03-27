@@ -273,7 +273,7 @@ cran3%>%
     valor correcto.
 
 ```{r}
-
+cran3%>% mutate(correct_size=size-1000)
 ```
 
 18. Usa `summarise` para determinar el valor medio del tamaño de las
