@@ -293,7 +293,7 @@ avg_bytes<-cran%>%summarise(avg_bytes=mean(size))
     con la función `ungroup`.
 
 ```{r}
-cran%>%group_by(package)
+by_package<-cran%>%group_by(package)
 ```
 
 20. Usa la función `summarise` sobre el elemento agrupado y calcula el
