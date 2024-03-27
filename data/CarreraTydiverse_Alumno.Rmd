@@ -263,7 +263,8 @@ cran3%>%
     expresado en Gbytes.
 
 ```{r}
-
+cran3%>%
+  mutate(size_gb=size/2^10)
 ```
 
 17. Considera que se ha detectado un error en el sistema donde todos los
