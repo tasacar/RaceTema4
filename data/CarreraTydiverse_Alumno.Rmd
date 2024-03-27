@@ -173,10 +173,7 @@ cran %>% select(r_arch:country)
     `date y size`
 
 ```{r}
-
-
-
-
+cran%>% select(-(date:size))
 ```
 
 6.  Elige aquellos registros en los que se haya descargado el paquete
