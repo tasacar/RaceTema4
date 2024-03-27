@@ -233,7 +233,7 @@ arrange(cran2, desc(ip_id))
 12. Ordena `cran2` según los valores de `package e ip_id`.
 
 ```{r}
-
+cran2<-cran2[order(cran2$package, cran2$ip_id), ]
 ```
 
 13. Ordena `cran2` según los valores de `country` (ascendente),
