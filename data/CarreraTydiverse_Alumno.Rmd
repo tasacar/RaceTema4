@@ -247,8 +247,7 @@ arrange(cran2, country, desc(r_version))
     `ip_id, package y size` en este orden y almacénalas en `cran3`.
 
 ```{r}
-
-
+cran3<-select(cran, ip_id, package, size)
 ```
 
 15. Crea una nueva variable en `cran3` llamada `size_mb` que contenga el
